@@ -3,17 +3,14 @@ import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 import {codeInput} from '@sanity/code-input'
-require('dotenv').config()
-require('dotenv').config({
-  path: `.env.${process.env['NODE_ENV']}`,
-})
+import {projectId, dataset} from './environment'
 
 export default defineConfig({
   name: 'default',
   title: 'onefrankdesignblog',
 
-  projectId: process.env['SANITY_PROJECT_ID'] || 'o1ddtxhi',
-  dataset: process.env['SANITY_READ_TOKEN'] || 'staging',
+  projectId,
+  dataset,
 
   plugins: [deskTool(), visionTool(), codeInput()],
 
