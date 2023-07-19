@@ -21,6 +21,11 @@ const post = {
       },
     },
     {
+      title: 'Is this post featured?',
+      name: 'isFeatured',
+      type: 'boolean',
+    },
+    {
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
