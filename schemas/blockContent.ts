@@ -50,6 +50,8 @@ const blockContent = {
         languageAlternatives: [
           {title: 'TypeScript', value: 'typescript'},
           {title: 'Javascript', value: 'javascript'},
+          {title: 'TSX', value: 'tsx'},
+          {title: 'JSX', value: 'jsx'},
           {title: 'HTML', value: 'html'},
           {title: 'CSS', value: 'css'},
           {title: 'JSON', value: 'json'},
